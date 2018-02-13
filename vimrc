@@ -12,6 +12,9 @@ set spelllang=en_gb,ru
 set listchars=tab:▸\ ,eol:¬
 set showbreak=…
 set hidden
+au FileType python set autoindent
+au FileType python set smartindent
+au FileType python set textwidth=79
 
 ""Mappings
 let mapleader = ","
