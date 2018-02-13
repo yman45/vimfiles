@@ -71,3 +71,10 @@ if has("autocmd")
     autocmd BufWritePre *.py,*.js :call <SID>StripTrailingWhitespaces()
     autocmd BufWritePost .vimrc source $MYVIMRC
 endif
+
+""Plugins configuration
+let g:vim_isort_python_version = 'python3'
+let g:vim_isort_map = '<C-i>'
+
+let g:space_vim_dark_background = 234
+color space-vim-dark
