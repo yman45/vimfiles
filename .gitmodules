@@ -1,0 +1,9 @@
+[submodule "pack/darkyman/start/tabular"]
+	path = pack/darkyman/start/tabular
+	url = https://github.com/godlygeek/tabular
+[submodule "pack/darkyman/start/nerdtree"]
+	path = pack/darkyman/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "pack/darkyman/start/gundo.vim"]
+	path = pack/darkyman/start/gundo.vim
+	url = https://github.com/sjl/gundo.vim
