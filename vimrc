@@ -24,6 +24,7 @@ nmap <silent> <leader>s :set spell!<CR>
 nmap <F3> :NERDTreeFind<CR>
 nmap <F4> :NERDTreeToggle<CR>
 nnoremap <F5> :GundoToggle<CR>
+nmap <F8> <Plug>(ale_fix)
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
@@ -76,8 +77,13 @@ if has("autocmd")
 endif
 
 ""Plugins configuration
-let g:vim_isort_python_version = 'python3'
-let g:vim_isort_map = '<C-i>'
+let g:ale_fixers = {
+\   'python': ['autopep8', 'yapf', 'isort'],
+\}
 
 let g:space_vim_dark_background = 234
 color space-vim-dark
+
+""Load plugins documentation
+packloadall
+silent! helptags ALL
