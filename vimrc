@@ -12,9 +12,11 @@ set spelllang=en_gb,ru
 set listchars=tab:▸\ ,eol:¬
 set showbreak=…
 set hidden
+set tags+=./tags
 au FileType python set autoindent
 au FileType python set smartindent
 au FileType python set textwidth=79
+au FileType c set textwidth=119
 
 ""Mappings
 let mapleader = ","
@@ -67,6 +69,7 @@ endfunction
 command! -nargs=* Wrap set wrap linebreak nolist
 
 if has("autocmd")
+    autocmd BufRead,BufNewFile *.h set filetype=c
     autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
     autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
     autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
