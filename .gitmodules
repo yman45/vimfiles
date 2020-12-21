@@ -16,6 +16,3 @@
 [submodule "pack/darkyman/start/vim-airline"]
 	path = pack/darkyman/start/vim-airline
 	url = https://github.com/vim-airline/vim-airline
-[submodule "pack/darkyman/start/YouCompleteMe"]
-	path = pack/darkyman/start/YouCompleteMe
-	url = https://github.com/ycm-core/YouCompleteMe/
