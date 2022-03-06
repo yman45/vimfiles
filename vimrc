@@ -81,12 +81,10 @@ endif
 
 ""Plugins configuration
 let g:ale_fixers = {
-\   'python': ['autopep8', 'yapf', 'isort'],
-\}
-let g:ale_pattern_options = {
-\   'l3mgr.\+.py$': {'ale_linters': ['flake8'], 'ale_fixers': ['black']}
+\   'python': ['black', 'isort'],
 \}
 
+let g:airline_powerline_fonts = 1
 let g:space_vim_dark_background = 234
 color space-vim-dark
 
