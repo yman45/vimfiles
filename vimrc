@@ -15,8 +15,6 @@ set hidden
 set tags+=./tags
 au FileType python set autoindent
 au FileType python set smartindent
-au FileType python set textwidth=79
-au FileType c set textwidth=119
 
 ""Mappings
 let mapleader = ","
@@ -82,6 +80,8 @@ endif
 ""Plugins configuration
 let g:ale_fixers = {
 \   'python': ['black', 'isort'],
+\   'c': ['clangtidy', 'remove_trailing_lines', 'trim_whitespace'],
+\   'sh': ['shfmt', 'remove_trailing_lines', 'trim_whitespace']
 \}
 
 let g:airline_powerline_fonts = 1
