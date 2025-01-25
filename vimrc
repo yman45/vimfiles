@@ -23,7 +23,7 @@ nmap <leader>v :tabedit $MYVIMRC<CR>
 nmap <silent> <leader>s :set spell!<CR>
 nmap <F3> :NERDTreeFind<CR>
 nmap <F4> :NERDTreeToggle<CR>
-nnoremap <F5> :GundoToggle<CR>
+nnoremap <F5> :MundoToggle<CR>
 nmap <F8> <Plug>(ale_fix)
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
